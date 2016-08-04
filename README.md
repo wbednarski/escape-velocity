@@ -1,6 +1,6 @@
 # Physics
 
-**TODO: Add description**
+Tiny Elixir program to calculate escape velocity for Earth and planet X!
 
 ## Installation
 
@@ -21,4 +21,3 @@ If [available in Hex](https://hex.pm/docs/publish), the package can be installed
       [applications: [:physics]]
     end
     ```
-
