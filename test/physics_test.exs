@@ -3,11 +3,12 @@ defmodule PhysicsTest do
   doctest Physics
 
   test "escape velocity of earth is correct" do
-    Physics.Rocketry.escape_velocity :earth
+    ev = :earth |> Physics.Rocketry.escape_velocity
+    assert ev === 11.2
   end
 
   test "escape velocity of planet X is correct" do
-    %{mass: 4.0e22, radius: 6.21e6}
-    |> Physics.Rocketry.escape_velocity
+    ev = %{mass: 4.0e22, radius: 6.21e6} |> Physics.Rocketry.escape_velocity
+    assert ev == 1
   end
 end
